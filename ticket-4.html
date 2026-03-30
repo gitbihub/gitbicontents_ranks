@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>40 CLASSES</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <style>
+      :root {
+        --bg: #05060a;
+        --text: #ffffff;
+        --muted: rgba(255, 255, 255, 0.65);
+        --neon: #9dff2f;
+      }
+      html,
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Pretendard, system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+          sans-serif;
+      }
+      .wrap {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 28px 18px;
+      }
+      h1 {
+        font-size: 44px;
+        margin: 0 0 10px;
+        letter-spacing: -1px;
+      }
+      .price {
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 18px;
+      }
+      .card {
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 18px;
+        padding: 18px;
+        background: linear-gradient(
+          155deg,
+          rgba(255, 255, 255, 0.16) 0%,
+          rgba(255, 255, 255, 0.05) 100%
+        );
+      }
+      .cta {
+        display: inline-block;
+        margin-top: 14px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: var(--neon);
+        color: #061005;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>40 CLASSES</h1>
+      <p class="price">34 000 ₽</p>
+      <section class="card">
+        <div>상세 페이지(예시)입니다. 40회권 장기권 혜택을 넣을 수 있어요.</div>
+        <a class="cta" href="./index.html">메인으로 돌아가기</a>
+      </section>
+    </main>
+  </body>
+</html>
