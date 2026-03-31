@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Rated Movies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <p class="hero-year">2026</p>
+      <h1>TOP RATED MOVIES</h1>
+      <p class="hero-subtitle">올해의 콘텐츠 TOP 20</p>
+    </header>
+
+    <main>
+      <section class="top3-section">
+        <h2>TOP 3</h2>
+        <div id="top3-list" class="top3-list" aria-live="polite"></div>
+      </section>
+
+      <section class="movie-section">
+        <h2>TOP 4 - 20</h2>
+        <div id="movie-list" class="movie-list"></div>
+      </section>
+
+      <section class="vote-section">
+        <h2>WHY THESE MOVIES ARE TOP RANKED?</h2>
+        <div id="vote-list" class="vote-list"></div>
+      </section>
+    </main>
+
+    <template id="top3-card-template">
+      <article class="top3-card">
+        <div class="rank-label"></div>
+        <img class="poster" alt="" />
+        <h3 class="movie-title"></h3>
+        <p class="movie-meta"></p>
+      </article>
+    </template>
+
+    <template id="movie-card-template">
+      <article class="movie-card">
+        <div class="rank-badge"></div>
+        <img class="poster" alt="" />
+        <h3 class="movie-title"></h3>
+        <p class="movie-meta"></p>
+      </article>
+    </template>
+
+    <template id="vote-item-template">
+      <article class="vote-item">
+        <div class="vote-icon">✓</div>
+        <div class="vote-text">
+          <p class="vote-title"></p>
+          <p class="vote-desc"></p>
+        </div>
+      </article>
+    </template>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
